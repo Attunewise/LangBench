@@ -1,0 +1,15 @@
+import Lang.Prelude
+import Lang.Data.List.Core
+
+fn row_energy : Uint64 -> List(Uint64) -> Uint64
+row_energy x nil = 0u64
+row_energy x (cons y ys) =
+  let difference = Uint64.sub x y in
+  Uint64.add (Uint64.mul difference difference) (row_energy x ys)
+
+fn all_energy : List(Uint64) -> List(Uint64) -> Uint64
+all_energy nil values = 0u64
+all_energy (cons x xs) values = Uint64.add (row_energy x values) (all_energy xs values)
+
+fn benchmark : List(Uint64) -> Uint64
+benchmark values = the Uint64 in all_energy values values
