@@ -2,8 +2,8 @@
 
 | Workload | C -O3 ms | Lang ms | Result |
 |---|---:|---:|---:|
-| A(3,12) | 616.282 | 3.672 | 167.83× faster |
-| A(3,13) | 2462.642 | 3.746 | 657.33× faster |
+| Ackermann(3,12) | 616.282 | 3.672 | 167.83× faster |
+| Ackermann(3,13) | 2462.642 | 3.746 | 657.33× faster |
 | Hanoi, 31 disks | 4811.564 | 3.305 | 1455.72× faster |
 | Affine iteration, n=5,000,000,000 | 4626.568 | 3.269 | 1415.48× faster |
 | Second-order recurrence, n=44 | 4381.705 | 3.170 | 1382.42× faster |
