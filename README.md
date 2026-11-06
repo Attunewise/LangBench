@@ -11,4 +11,5 @@
 | Fibers, 8,388,608 rows | 28.858 | 5.780 | 4.99× faster |
 | Recursive text construction, depth 65,536 | 283.268 | 2.927 | 96.76× faster |
 | Sorted first, 240,000 values, seed 42 | 4770.485 | 13.625 | 350.12× faster |
+| Sorted k, 240,000 values, seed 42 | 5.003s | 0.057s | 87× faster |
 | Pair energy, 131,072 values (17,179,869,184 pair terms) | 5254.203 | 8.544 | 614.93× faster |
